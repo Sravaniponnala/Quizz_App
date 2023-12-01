@@ -1,0 +1,26 @@
+<!-- result.component.html -->
+<div class="container mt-5">
+  <div *ngIf="questions && questions.length > 0" class="card result-card">
+    <div class="card-header result-header">
+      <h2>Quiz Result</h2>
+    </div>
+    <div class="card-body result-body">
+      <h2 class="mb-4">Quiz Results</h2>
+      <div class="result-summary">
+        <p class="result-summary-item">Correct Answers: {{ getCorrectCount() }}</p>
+        <p class="result-summary-item">Incorrect Answers: {{ getIncorrectCount() }}</p>
+      </div>
+      <div *ngFor="let question of questions; let i = index" class="result-item">
+        <div class="question">
+          <strong>{{ i + 1 }}. {{ question.question }}</strong>
+        </div>
+        <div class="answer-status" [ngClass]="{'correct': isAnswerCorrect(i), 'incorrect': !isAnswerCorrect(i)}">
+          {{ isAnswerCorrect(i) ? 'Correct' : 'Incorrect' }}
+        </div>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-primary" (click)="restartQuiz()">Restart Quiz</button>
+      </div>
+    </div>
+  </div>
+</div>

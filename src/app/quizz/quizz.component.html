@@ -1,0 +1,30 @@
+<!-- quizz.component.html -->
+<div class="container mt-5">
+  <div class="card">
+    <div class="card-header">
+      <!--for displaying the current question -->
+      <h2>{{ currentQuestion?.question }}</h2>
+    </div>
+    <div class="card-body">
+      <!--for dispplaying the current question along with index number-->
+      <div class="question-number">{{ currentQuestionIndex+1}}. {{ currentQuestion?.question }}</div>
+      
+      <div *ngFor="let option of currentQuestion?.options || []" class="option">
+        <label class="d-block mb-2">
+          <input type="radio" [attr.value]="option" [checked]="option === selectedOption"
+            (change)="selectOption(option)"
+            class="mr-2"
+          />
+          {{ option }}
+        </label>
+      </div>
+      <div >
+        <span>{{ currentQuestionIndex+1 }} of {{ questions.length}}</span>
+      </div>
+      <div class="buttons">
+        <button class="btn btn-primary" (click)="goToNext()" [disabled]="isLastQuestion">Next</button>
+        <button class="btn btn-primary" (click)="submit()" [disabled]="!isLastQuestion">Submit</button>
+      </div>
+    </div>
+  </div>
+</div>

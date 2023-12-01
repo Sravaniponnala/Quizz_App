@@ -1,0 +1,32 @@
+[
+  {
+    "questionId": 1,
+    "question": "What is the Angular directive for two-way data binding?",
+    "options": ["ng-bind", "ng-model", "ng-bind-model", "ng-two-way"],
+    "correctAnswer": "ng-model"
+  },
+  {
+    "questionId": 2,
+    "question": "In Angular, what does NgModule do?",
+    "options": ["Defines an Angular module", "Defines a TypeScript class", "Defines an HTML element", "Defines a CSS style"],
+    "correctAnswer": "Defines an Angular module"
+  },
+  {
+    "questionId": 3,
+    "question": "Which Angular feature is used to handle user input?",
+    "options": ["ng-input", "ng-change", "ng-bind", "ng-model"],
+    "correctAnswer": "ng-model"
+  },
+  {
+    "questionId": 4,
+    "question": "What is the Angular CLI used for?",
+    "options": ["To create and manage Angular projects", "To run JavaScript code", "To manage databases", "To write CSS styles"],
+    "correctAnswer": "To create and manage Angular projects"
+  },
+  {
+    "questionId": 5,
+    "question": "What is the file extension for an Angular component?",
+    "options": [".html", ".js", ".ts", ".css"],
+    "correctAnswer": ".ts"
+  }
+]

@@ -1,0 +1,55 @@
+/* result.component.css */
+.result-card {
+  width: 80%;
+  margin: auto;
+  background-color: #f8f9fa;
+  border: 1px solid #dee2e6;
+  border-radius: 10px;
+}
+
+.result-header {
+  background-color: #007bff;
+  color: #fff;
+  padding: 15px;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.result-body {
+  padding: 20px;
+}
+
+.result-summary {
+  margin-bottom: 20px;
+}
+
+.result-summary-item {
+  font-size: 16px;
+  margin-bottom: 10px;
+}
+
+.result-item {
+  margin-bottom: 20px;
+}
+
+.question {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.answer-status {
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.correct {
+  color: green;
+}
+
+.incorrect {
+  color: red;
+}
+
+.buttons {
+  margin-top: 20px;
+}
